@@ -1,42 +1,120 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
   <style>
-    ul{
+    /* css reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 页面宽度(普通) */
+    header,
+    main,
+    footer {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* 响应式部分 */
+    @media only screen and (max-width: 1200px) {
+      header,
+      main,
+      footer {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    /* 头部样式 */
+    .headerContent {
+      width: 100%;
+      height: 75px;
+      background-color: #efefef70;
+    }
+
+    header ul {
       list-style: none;
+    }
+
+    header li {
+      line-height: 75px;
+      font-size: 1.25rem;
+      width: 50px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 75px;
+    }
+
+    header ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 主体样式 */
+    main {
+      
     }
   </style>
 </head>
+
 <body>
-	<p>个人小站主页，先写一点，日后更新</p>
-	<h3>一些资源网页</h3>
-	<ul>
-		<li>
-			<a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git教程</a>
-		</li>
-		<li>
-			<a href="https://www.w3school.com.cn/">W3school</a>
-		</li>
-		<li>
-			<a href="http://es6.ruanyifeng.com/">ECMAScript 6 入门</a>
-		</li>
-		<li>
-			<a href="https://www.w3school.com.cn/sql/sql_select.asp">SQL SELECT 语句</a>
-		</li>
-		<li>
-			<a href="https://www.jianshu.com/p/0ae3e3bb3082">vue项目开发流程</a>
-		</li>
-	</ul>
-	<h3>我的主页</h3>
-	<ul>
-		<li>
-			<a href="https://weibo.com/u/5449069760" target="blank">新浪微博</a>
-		</li>
-		<li>
-			<a href="https://www.zhihu.com/people/yimi-yang-guang-a-76/" target="blank">知乎</a>
-		</li>
-	</ul>
+  <!-- 网页头 -->
+  <div class="headerContent">
+    <header>
+      <img src="https://s2.ax1x.com/2020/02/16/39Bizd.png" alt="logo.png" />
+      <ul>
+        <li>教程</li>
+        <li>教程</li>
+        <li>教程</li>
+      </ul>
+    </header>
+  </div>
+  <!-- 主体 -->
+  <main>
+    <p>个人小站主页，先写一点，日后更新</p>
+    <h3>一些资源网页</h3>
+    <ul>
+      <li>
+        <a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git教程</a>
+      </li>
+      <li>
+        <a href="https://www.w3school.com.cn/">W3school</a>
+      </li>
+      <li>
+        <a href="http://es6.ruanyifeng.com/">ECMAScript 6 入门</a>
+      </li>
+      <li>
+        <a href="https://www.w3school.com.cn/sql/sql_select.asp">SQL SELECT 语句</a>
+      </li>
+      <li>
+        <a href="https://www.jianshu.com/p/0ae3e3bb3082">vue项目开发流程</a>
+      </li>
+    </ul>
+    <h3>我的主页</h3>
+    <ul>
+      <li>
+        <a href="https://weibo.com/u/5449069760" target="blank">新浪微博</a>
+      </li>
+      <li>
+        <a href="https://www.zhihu.com/people/yimi-yang-guang-a-76/" target="blank">知乎</a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    脚部
+  </footer>
 </body>
+
 </html>
