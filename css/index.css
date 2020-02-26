@@ -77,12 +77,6 @@ footer {
   margin: 0 auto;
   padding-top: 20px;
 }
-main,
-.banner,
-footer {
-  /* 主体 底部 背景测试 */
-  /* background-color: #00000033; */
-}
 
 /* 主体样式 */
 main {
@@ -226,7 +220,4 @@ header {
 .self img{
   float: right;
   margin-right: 30px;
-}
-.self p{
-  /* clear: both; */
 }

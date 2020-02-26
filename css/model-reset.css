@@ -1,0 +1,32 @@
+/* midtor重写部分css实现只使用它的浏览md文本功能 */
+/* 临时解决方案 */
+/* 移除部分元素 */
+.head,.editor{
+  display: none !important;
+}
+
+
+/* 重写样式 */
+.markdown-body{
+  background-color: rgb(247,247,247);
+}
+.mditor .viewer{
+  background-color: rgb(247,247,247);
+}
+
+.mditor{
+  padding: 0;
+  border: none !important;
+  height:auto !important;
+}
+div.mditor.split .mditor{
+  overflow: auto;
+}
+
+.mditor .body{
+  height: auto;
+}
+
+.mditor.split .viewer{
+  width: 100%;
+}
