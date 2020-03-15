@@ -18,7 +18,7 @@ CREATE TABLE collect(
 );
 
 CREATE TABLE jotting(
-  nid INT PRIMARY KEY AUTO_INCREMENT,
+  jid INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(64),
   content VARCHAR(4096),
   pub_time VARCHAR(10)
